@@ -45,25 +45,30 @@ https://github.com/user-attachments/assets/63aeba23-6821-40dc-8067-de5a99e09b44
 프로젝트 구성에서 사용된 주요 패널 요소들은 아래와 같은 속성(Properties)을 가지고 있습니다.
 
 
-> 📷 예시 캡처 (7개 정도 삽입 권장)
-<details> <summary> Speed </summary>
-<img src="https://github.com/user-attachments/assets/6321da02-020e-4872-af4f-2f8bde1102a8" width="300">
-</details>
+![Tool](https://github.com/user-attachments/assets/3782a8ca-1fb3-4d24-9026-53d40cc2c43e)
+
 <details> <summary> RPM </summary>
 <img src="https://github.com/user-attachments/assets/9ef2b2a1-3448-41bf-a8c2-80370f4ca71f" width="300">
-</details>
-<details> <summary> TransmissionOutputBox </summary>
-<img src="https://github.com/user-attachments/assets/58d316c4-54c6-44ab-9822-88b9e99eb6f1" width="300">
-</details>
-<details> <summary> TransmissionUpButton </summary>
-<img src="https://github.com/user-attachments/assets/dbd09174-1c0c-4299-adfa-7d17f32f23b5" width="300">
-</details>
-<details> <summary> AccelTrackBar </summary>
-<img src="https://github.com/user-attachments/assets/1056e6a7-6a0c-4b57-99d1-b771c8eb53bc" width="300">
 </details>
 <details> <summary> RpmWarn </summary>
 <img src="https://github.com/user-attachments/assets/4149bdca-acaa-4657-a421-1bd98fbf2df9" width="300">
 </details>
+<details> <summary> AccelTrackBar </summary>
+<img src="https://github.com/user-attachments/assets/1056e6a7-6a0c-4b57-99d1-b771c8eb53bc" width="300">
+</details>
+<details> <summary> TransmissionUpButton </summary>
+<img src="https://github.com/user-attachments/assets/dbd09174-1c0c-4299-adfa-7d17f32f23b5" width="300">
+</details>
+<details> <summary> TransmissionOutputBox </summary>
+<img src="https://github.com/user-attachments/assets/58d316c4-54c6-44ab-9822-88b9e99eb6f1" width="300">
+</details>
+<details> <summary> Speed </summary>
+<img src="https://github.com/user-attachments/assets/6321da02-020e-4872-af4f-2f8bde1102a8" width="300">
+</details>
+
+
+
+
 
 ---
 
