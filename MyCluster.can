@@ -1,0 +1,66 @@
+﻿/*@!Encoding:65001*/
+includes {}
+variables {
+  message 0x100 msg;
+  msTimer sendTimer;
+  int rpm;
+}
+on start {
+ msg.dlc = 4;
+ setTimer(sendTimer, 100);
+}
+on timer sendTimer {
+//value rpm with Transmission
+  if(@sysvar::SysVarMyCluster::Transmission == 0 || @sysvar::SysVarMyCluster::Transmission == 1){
+    rpm = @sysvar::SysVarMyCluster::Accel * 2.4 * 93.3;
+  }
+  
+  if(2 <= @sysvar::SysVarMyCluster::Transmission && @sysvar::SysVarMyCluster::Transmission <= 7){
+    if(30 * (@sysvar::SysVarMyCluster::Transmission - 1) <= @sysvar::SysVarMyCluster::Speed)
+      rpm = (@sysvar::SysVarMyCluster::Accel * 2.4 - 30 * (@sysvar::SysVarMyCluster::Transmission - 1)) * 93.3;
+    else rpm = 0;
+  }
+  if(@sysvar::SysVarMyCluster::Transmission == 8){
+    if(180 <= @sysvar::SysVarMyCluster::Speed)
+      rpm = (@sysvar::SysVarMyCluster::Accel * 2.4 - 180) * 46.7;
+    else
+      rpm = 0;
+  }
+//warn RPM
+  if (rpm > 5600) {
+    @sysvar::SysVarMyCluster::RpmWarn = 1;
+  } else {
+    @sysvar::SysVarMyCluster::RpmWarn = 0;
+  }
+  msg.byte(0) = @sysvar::SysVarMyCluster::Accel;
+  msg.byte(1) = rpm & 0x0F;
+  msg.byte(2) = rpm >> 8;
+  output(msg);
+  setTimer(sendTimer, 100);
+}
+
+on sysvar SysVarMyCluster::Accel {
+  //
+  if(0 <= @sysvar::SysVarMyCluster::Transmission && @sysvar::SysVarMyCluster::Transmission <= 6){
+    if(12.5 * (@sysvar::SysVarMyCluster::Transmission + 1) < @sysvar::SysVarMyCluster::Accel)
+      @sysvar::SysVarMyCluster::Speed = 30 * (@sysvar::SysVarMyCluster::Transmission + 1);
+    else @sysvar::SysVarMyCluster::Speed = @sysvar::SysVarMyCluster::Accel * 2.4;
+  }
+  else @sysvar::SysVarMyCluster::Speed = @sysvar::SysVarMyCluster::Accel * 2.4;
+}
+
+on sysvar SysVarMyCluster::UpTransmission {
+  if (@sysvar::SysVarMyCluster::UpTransmission == 1) {
+    if(@sysvar::SysVarMyCluster::Transmission < 8){
+      @sysvar::SysVarMyCluster::Transmission++;
+    }
+  }
+}
+
+on sysvar SysVarMyCluster::DownTransmission {
+  if (@sysvar::SysVarMyCluster::DownTransmission == 1) {
+    if(0 < @sysvar::SysVarMyCluster::Transmission){
+      @sysvar::SysVarMyCluster::Transmission--;
+    }
+  }
+}

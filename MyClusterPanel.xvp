@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Panel" ControlName="MyClusterPanel">
+    <Object Type="Vector.CANalyzer.Panels.Design.PictureBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X70ceba42e0cc4e4baeeaeebe36cd8f83e855" ControlName="Picture Box 1">
+      <Property Name="Name">X70ceba42e0cc4e4baeeaeebe36cd8f83e855</Property>
+      <Property Name="Size">120, 71</Property>
+      <Property Name="Location">209, 0</Property>
+      <Property Name="ImageFile">..\..\..\..\..\..\user\Desktop\hyundai_logo.png</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.AnalogGaugeControl, Vector.CANalyzer.Panels.AnalogGauge, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X6a85e9a3ec6dbe4441e8fd8e2ed6b2b5d293" ControlName="Analog Gauge 1">
+      <Property Name="Name">X6a85e9a3ec6dbe4441e8fd8e2ed6b2b5d293</Property>
+      <Property Name="Size">225, 180</Property>
+      <Property Name="Location">0, 5</Property>
+      <Property Name="ScaleMin">0</Property>
+      <Property Name="ScaleMax">240</Property>
+      <Property Name="LowerRangeLimit">0</Property>
+      <Property Name="UpperRangeLimit">168</Property>
+      <Property Name="MinColor">Black</Property>
+      <Property Name="MidColor">Black</Property>
+      <Property Name="MaxColor">Blue</Property>
+      <Property Name="ScaleAngle">270</Property>
+      <Property Name="BackgroundColor">White</Property>
+      <Property Name="ArrowColor">Red</Property>
+      <Property Name="CenterColor">Red</Property>
+      <Property Name="LegendText">km/h</Property>
+      <Property Name="LegendTextFont">Microsoft Sans Serif, 8.25pt</Property>
+      <Property Name="IsTicksAdjustment">False</Property>
+      <Property Name="CurrentPosition">0</Property>
+      <Property Name="LengthMainTicks">10</Property>
+      <Property Name="IsFrame">False</Property>
+      <Property Name="IsMargin">False</Property>
+      <Property Name="ScaleMargin">0</Property>
+      <Property Name="SymbolConfiguration">8;16;SysVarMyCluster;;;Speed;1;;;-1;;;Value;;;0</Property>
+      <Property Name="CriticalProps" Member="AAEAAAD/////AQAAAAAAAAAEAQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10GAgAAAAUuY3RvcgYDAAAAXFZlY3Rvci5DQU5hbHl6ZXIuUGFuZWxzLkFuYWxvZ0dhdWdlLCBWZXJzaW9uPTE3LjMuOTEuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBgQAAAA2VmVjdG9yLkNBTmFseXplci5QYW5lbHMuRGVzaWduLkdhdWdlQ3JpdGljYWxQcm9wZXJ0aWVzBgUAAAAyVm9pZCAuY3RvcihEb3VibGUsIERvdWJsZSwgRG91YmxlLCBEb3VibGUsIERvdWJsZSkGBgAAAFAuY3RvcihTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlKQEAAAAKCw==">
+        <Argument>0</Argument>
+        <Argument>240</Argument>
+        <Argument>0</Argument>
+        <Argument>0</Argument>
+        <Argument>168</Argument>
+      </Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Xd674e249eae08e4e03e9f0ae746f0bb49ab4" ControlName="Input/Output Box 1">
+      <Property Name="Name">Xd674e249eae08e4e03e9f0ae746f0bb49ab4</Property>
+      <Property Name="Size">32, 37</Property>
+      <Property Name="Location">251, 89</Property>
+      <Property Name="AlarmGeneralSettings">1;2;0;100</Property>
+      <Property Name="AlarmLowerBkgColor">Salmon</Property>
+      <Property Name="AlarmLowerTextColor">Black</Property>
+      <Property Name="AlarmUpperBkgColor">IndianRed</Property>
+      <Property Name="AlarmUpperTextColor">Black</Property>
+      <Property Name="BoxBorderStyle">FixedSingle</Property>
+      <Property Name="DisplayLabel">Left</Property>
+      <Property Name="BoxFont">Microsoft Sans Serif, 20pt</Property>
+      <Property Name="AlarmLowerFont">Microsoft Sans Serif, 20pt</Property>
+      <Property Name="AlarmUpperFont">Microsoft Sans Serif, 20pt</Property>
+      <Property Name="TabIndex">5</Property>
+      <Property Name="DescriptionText" />
+      <Property Name="ValueDecimalPlaces">0</Property>
+      <Property Name="ValueDisplay">Decimal</Property>
+      <Property Name="UsedValueTable">PhysicalValue</Property>
+      <Property Name="DescriptionSize">5, 37</Property>
+      <Property Name="SymbolConfiguration">8;16;SysVarMyCluster;;;Transmission;1;;;-1;;;Value;;;0</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X6c25875ae8f26e4a3cea733e9a3e6e682dc7" ControlName="DownTransmissionButton">
+      <Property Name="Name">X6c25875ae8f26e4a3cea733e9a3e6e682dc7</Property>
+      <Property Name="Size">30, 23</Property>
+      <Property Name="Location">279, 139</Property>
+      <Property Name="UseWindowsStyle">False</Property>
+      <Property Name="BackColor">255, 255, 155, 152</Property>
+      <Property Name="TabIndex">4</Property>
+      <Property Name="Text">↓</Property>
+      <Property Name="SymbolConfiguration">8;16;SysVarMyCluster;;;DownTransmission;1;;;-1;;;Value;;;0</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X4daefc88efa88e4d45ea75eee47d604e318c" ControlName="UpTransmissionButton">
+      <Property Name="Name">X4daefc88efa88e4d45ea75eee47d604e318c</Property>
+      <Property Name="Size">30, 23</Property>
+      <Property Name="Location">231, 139</Property>
+      <Property Name="UseWindowsStyle">False</Property>
+      <Property Name="BackColor">255, 154, 204, 255</Property>
+      <Property Name="TabIndex">3</Property>
+      <Property Name="Text">↑</Property>
+      <Property Name="SymbolConfiguration">8;16;SysVarMyCluster;;;UpTransmission;1;;;-1;;;Value;;;0</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.TrackBarControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Xfc6b46bdec1f9e490fe8a3fea33db7b8cf98" ControlName="Track Bar 1">
+      <Property Name="Name">Xfc6b46bdec1f9e490fe8a3fea33db7b8cf98</Property>
+      <Property Name="Size">158, 30</Property>
+      <Property Name="Location">215, 191</Property>
+      <Property Name="TabIndex">2</Property>
+      <Property Name="MaximumDouble">100</Property>
+      <Property Name="MaximumSize">100000, 30</Property>
+      <Property Name="Maximum">100</Property>
+      <Property Name="SymbolConfiguration">8;16;SysVarMyCluster;;;Accel;1;;;-1;;;Value;;;0</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X7239831be4d61e4f61ebc4de4742d00c7c23" ControlName="Static Text 1">
+      <Property Name="Name">X7239831be4d61e4f61ebc4de4742d00c7c23</Property>
+      <Property Name="Size">34, 17</Property>
+      <Property Name="Location">174, 198</Property>
+      <Property Name="Font">Segoe UI Symbol, 8.25pt</Property>
+      <Property Name="Text">Accel</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X496542dcef475e47bbeb8c5e8e88a2c96910" ControlName="RPMwarn">
+      <Property Name="Name">X496542dcef475e47bbeb8c5e8e88a2c96910</Property>
+      <Property Name="Size">24, 24</Property>
+      <Property Name="Location">421, 139</Property>
+      <Property Name="ReadOnlyControl">True</Property>
+      <Property Name="TabIndex">1</Property>
+      <Property Name="TabStopActive">False</Property>
+      <Property Name="SwitchValuesVTXml">&lt;Version&gt;2&lt;/Version&gt;&lt;Count&gt;2&lt;/Count&gt;&lt;RxValue&gt;0&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;0&lt;/TxValue&gt;&lt;Color&gt;255, 152, 152, 152&lt;/Color&gt;&lt;RxValue&gt;1&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;1&lt;/TxValue&gt;&lt;Color&gt;Red&lt;/Color&gt;</Property>
+      <Property Name="SymbolConfiguration">8;16;SysVarMyCluster;;;RpmWarn;1;;;-1;;;Value;;;0</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.AnalogGaugeControl, Vector.CANalyzer.Panels.AnalogGauge, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X0bd69619ecfe3e4852eb46ee138b37eca959" ControlName="myRPM">
+      <Property Name="Name">X0bd69619ecfe3e4852eb46ee138b37eca959</Property>
+      <Property Name="Size">225, 180</Property>
+      <Property Name="Location">319, 5</Property>
+      <Property Name="ScaleMin">0</Property>
+      <Property Name="ScaleMax">8000</Property>
+      <Property Name="LowerRangeLimit">0</Property>
+      <Property Name="UpperRangeLimit">5600</Property>
+      <Property Name="MinColor">Black</Property>
+      <Property Name="MidColor">Black</Property>
+      <Property Name="ScaleAngle">270</Property>
+      <Property Name="BackgroundColor">White</Property>
+      <Property Name="ArrowColor">Red</Property>
+      <Property Name="CenterColor">Red</Property>
+      <Property Name="LegendText">RPM</Property>
+      <Property Name="LegendTextFont">Microsoft Sans Serif, 8.25pt</Property>
+      <Property Name="IsTicksAdjustment">False</Property>
+      <Property Name="CurrentPosition">0</Property>
+      <Property Name="LengthMainTicks">10</Property>
+      <Property Name="IsFrame">False</Property>
+      <Property Name="IsMargin">False</Property>
+      <Property Name="ScaleMargin">0</Property>
+      <Property Name="SymbolConfiguration">8;2;MyCluster;;MyCluster;RPM;1;CAN;;-1;;;Value;;;0</Property>
+      <Property Name="CriticalProps" Member="AAEAAAD/////AQAAAAAAAAAEAQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10GAgAAAAUuY3RvcgYDAAAAXFZlY3Rvci5DQU5hbHl6ZXIuUGFuZWxzLkFuYWxvZ0dhdWdlLCBWZXJzaW9uPTE3LjMuOTEuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBgQAAAA2VmVjdG9yLkNBTmFseXplci5QYW5lbHMuRGVzaWduLkdhdWdlQ3JpdGljYWxQcm9wZXJ0aWVzBgUAAAAyVm9pZCAuY3RvcihEb3VibGUsIERvdWJsZSwgRG91YmxlLCBEb3VibGUsIERvdWJsZSkGBgAAAFAuY3RvcihTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlKQEAAAAKCw==">
+        <Argument>0</Argument>
+        <Argument>8000</Argument>
+        <Argument>0</Argument>
+        <Argument>0</Argument>
+        <Argument>5600</Argument>
+      </Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">555, 237</Property>
+    <Property Name="Location">0, 0</Property>
+    <Property Name="BackColor">White</Property>
+  </Object>
+</Panel>
